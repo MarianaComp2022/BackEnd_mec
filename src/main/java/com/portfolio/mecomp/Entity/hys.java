@@ -10,6 +10,7 @@ public class hys {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String tipo;
     private String nombre;
     private int porcentaje;
     
@@ -18,7 +19,7 @@ public class hys {
     public hys() {
     }
 
-    public hys(String nombre, int porcentaje) {
+    public hys(String tipo, String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
@@ -32,6 +33,14 @@ public class hys {
         this.id = id;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
     public String getNombre() {
         return nombre;
     }

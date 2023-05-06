@@ -1,5 +1,8 @@
 com\portfolio\mecomp\Entity\Educacion.class
 com\portfolio\mecomp\Service\Shys.class
+com\portfolio\mecomp\Service\SProyecto.class
+com\portfolio\mecomp\Dto\dtoProyecto.class
+com\portfolio\mecomp\Entity\Proyecto.class
 com\portfolio\mecomp\Security\Entity\Rol.class
 com\portfolio\mecomp\Security\Entity\UsuarioPrincipal.class
 com\portfolio\mecomp\Entity\Experiencia.class
@@ -8,6 +11,7 @@ com\portfolio\mecomp\Entity\Persona.class
 com\portfolio\mecomp\Security\Dto\JwtDto.class
 com\portfolio\mecomp\Security\Enums\RolNombre.class
 com\portfolio\mecomp\Service\SExperiencia.class
+com\portfolio\mecomp\Repository\RProyecto.class
 com\portfolio\mecomp\Security\Dto\NuevoUsuario.class
 com\portfolio\mecomp\Dto\dtoEducacion.class
 com\portfolio\mecomp\Service\ImpPersonaService.class
@@ -21,6 +25,7 @@ com\portfolio\mecomp\Security\Repository\iUsuarioRepository.class
 com\portfolio\mecomp\Repository\Rhys.class
 com\portfolio\mecomp\Security\Controller\Mensaje.class
 com\portfolio\mecomp\Security\Service\UsuarioService.class
+com\portfolio\mecomp\Controller\CProyecto.class
 com\portfolio\mecomp\Controller\CExperiencia.class
 com\portfolio\mecomp\Security\jwt\JwtProvider.class
 com\portfolio\mecomp\Controller\CEducacion.class
