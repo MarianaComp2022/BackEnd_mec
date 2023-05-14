@@ -12,17 +12,18 @@ public class Experiencia {
     private int id;
     private String nombreExp;
     private String descripcionExp;
-    
+    private int id_Pers_exp;
     // Constructores
     
     public Experiencia(){
     }
-    
-    public Experiencia(String nombreExp,String descripcionExp){
+
+    public Experiencia(String nombreExp, String descripcionExp, int id_Pers_exp) {
         this.nombreExp = nombreExp;
         this.descripcionExp = descripcionExp;
+        this.id_Pers_exp = id_Pers_exp;
     }
-    
+           
     // Getters and Setters
 
     public int getId() {
@@ -47,6 +48,14 @@ public class Experiencia {
 
     public void setDescripcionExp(String descripcionExp) {
         this.descripcionExp = descripcionExp;
+    }
+
+    public int getId_Pers_exp() {
+        return id_Pers_exp;
+    }
+
+    public void setId_Pers_exp(int id_Pers_exp) {
+        this.id_Pers_exp = id_Pers_exp;
     }
     
     

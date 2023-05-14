@@ -8,17 +8,17 @@ public class dtoProyecto {
     @NotBlank
     private String descripcion;
     @NotBlank 
-    private String img;  
+    private String proy_url;  
     
 //Constructores 
 
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String nombre, String descripcion, String img) {
+    public dtoProyecto(String nombre, String descripcion, String proy_url) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.img = img;
+        this.proy_url = proy_url;
     }
     
 // Getters and Setters
@@ -39,12 +39,12 @@ public class dtoProyecto {
         this.descripcion = descripcion;
     }
 
-    public String getImg() {
-        return img;
+    public String getProy_url() {
+        return proy_url;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setProy_url(String proy_url) {
+        this.proy_url = proy_url;
     }
     
     

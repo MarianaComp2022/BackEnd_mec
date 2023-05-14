@@ -13,17 +13,21 @@ public class hys {
     private String tipo;
     private String nombre;
     private int porcentaje;
+    private int id_Pers_hys;
     
 //Constructores
   
     public hys() {
     }
 
-    public hys(String tipo, String nombre, int porcentaje) {
+    public hys(String tipo, String nombre, int porcentaje, int id_Pers_hys) {
+        this.tipo = tipo;
         this.nombre = nombre;
         this.porcentaje = porcentaje;
+        this.id_Pers_hys = id_Pers_hys;
     }
 
+    
 // Getters and Setters
     public int getId() {
         return id;
@@ -55,6 +59,14 @@ public class hys {
 
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
+    }
+
+    public int getId_Pers_hys() {
+        return id_Pers_hys;
+    }
+
+    public void setId_Pers_hys(int id_Pers_hys) {
+        this.id_Pers_hys = id_Pers_hys;
     }
 
     

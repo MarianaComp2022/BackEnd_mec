@@ -58,7 +58,7 @@ public class CEducacion {
         }
         
         Educacion educacion = new Educacion(
-                dtoeducacion.getNombreEdu(), dtoeducacion.getDescripcionEdu()
+                dtoeducacion.getNombreEdu(), dtoeducacion.getDescripcionEdu(), dtoeducacion.getId_Pers_edu()
         );
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion Creada"), HttpStatus.OK);
@@ -79,6 +79,7 @@ public class CEducacion {
         Educacion educacion = sEducacion.getOne(id).get();
         educacion.setNombreEdu(dtoeducacion.getNombreEdu());
         educacion.setDescripcionEdu(dtoeducacion.getDescripcionEdu());
+        educacion.setId_Pers_edu(dtoeducacion.getId_Pers_edu());
         
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion Actualizada"), HttpStatus.OK);
