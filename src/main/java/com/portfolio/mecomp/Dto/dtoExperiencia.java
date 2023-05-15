@@ -8,16 +8,16 @@ public class dtoExperiencia {
     private String nombreExp;
     @NotBlank
     private String descripcionExp;
-    private int id_Pers_exp;
+    private int idPersexp;
     //Constructores
 
     public dtoExperiencia() {
     }
 
-    public dtoExperiencia(String nombreExp, String descripcionExp, int id_Pers_exp) {
+    public dtoExperiencia(String nombreExp, String descripcionExp, int idPersexp) {
         this.nombreExp = nombreExp;
         this.descripcionExp = descripcionExp;
-        this.id_Pers_exp = id_Pers_exp;
+        this.idPersexp = idPersexp;
     }
        
     //Getters & Setters
@@ -38,13 +38,15 @@ public class dtoExperiencia {
         this.descripcionExp = descripcionExp;
     }
 
-    public int getId_Pers_exp() {
-        return id_Pers_exp;
+    public int getIdPersexp() {
+        return idPersexp;
     }
 
-    public void setId_Pers_exp(int id_Pers_exp) {
-        this.id_Pers_exp = id_Pers_exp;
+    public void setIdPersexp(int idPersexp) {
+        this.idPersexp = idPersexp;
     }
+
+    
     
     
     

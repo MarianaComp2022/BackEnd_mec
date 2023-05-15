@@ -10,7 +10,7 @@ public class dtoHys {
     @NotBlank
     private int porcentaje;
     
-    private int id_Pers_hys;
+    private int idPershys;
     
     
     
@@ -18,11 +18,11 @@ public class dtoHys {
     public dtoHys() {
     }
 
-    public dtoHys(String tipo, String nombre, int porcentaje, int id_Pers_hys) {
+    public dtoHys(String tipo, String nombre, int porcentaje, int idPershys) {
         this.tipo = tipo;
         this.nombre = nombre;
         this.porcentaje = porcentaje;
-        this.id_Pers_hys = id_Pers_hys;
+        this.idPershys = idPershys;
     }
        
 // Getters and Setters
@@ -51,13 +51,15 @@ public class dtoHys {
         this.porcentaje = porcentaje;
     }
 
-    public int getId_Pers_hys() {
-        return id_Pers_hys;
+    public int getIdPershys() {
+        return idPershys;
     }
 
-    public void setId_Pers_hys(int id_Pers_hys) {
-        this.id_Pers_hys = id_Pers_hys;
+    public void setIdPershys(int idPershys) {
+        this.idPershys = idPershys;
     }
+
+    
     
     
     

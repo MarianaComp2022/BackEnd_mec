@@ -9,18 +9,19 @@ public class dtoEducacion {
     private String nombreEdu;
     @NotBlank
     private String descripcionEdu;
-    private int id_Pers_edu;
+    private int idPersedu;
     
     //Constructores
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombreEdu, String descripcionEdu, int id_Pers_edu) {
+    public dtoEducacion(String nombreEdu, String descripcionEdu, int idPersedu) {
         this.nombreEdu = nombreEdu;
         this.descripcionEdu = descripcionEdu;
-        this.id_Pers_edu = id_Pers_edu;
+        this.idPersedu = idPersedu;
     }
-        
+
+    
     // Getters and Setters
 
     public String getNombreEdu() {
@@ -39,13 +40,12 @@ public class dtoEducacion {
         this.descripcionEdu = descripcionEdu;
     }
 
-    public int getId_Pers_edu() {
-        return id_Pers_edu;
+    public int getIdPersedu() {
+        return idPersedu;
     }
 
-    public void setId_Pers_edu(int id_Pers_edu) {
-        this.id_Pers_edu = id_Pers_edu;
+    public void setIdPersedu(int idPersedu) {
+        this.idPersedu = idPersedu;
     }
-    
     
 }

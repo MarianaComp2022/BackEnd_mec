@@ -1,28 +1,32 @@
 package com.portfolio.mecomp.Entity;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Educacion {
+public class Educacion implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreEdu;
     private String descripcionEdu;
-    private int id_Pers_edu;
+    private int idPersedu;
 
 //Constructores
     public Educacion() {
     }
 
-    public Educacion(String nombreEdu, String descripcionEdu, int id_Pers_edu) {
+    public Educacion(String nombreEdu, String descripcionEdu, int idPersedu) {
         this.nombreEdu = nombreEdu;
         this.descripcionEdu = descripcionEdu;
-        this.id_Pers_edu = id_Pers_edu;
-    }   
+        this.idPersedu = idPersedu;
+    }
+
+    
+
     
  // Getters and Setters
 
@@ -50,13 +54,15 @@ public class Educacion {
         this.descripcionEdu = descripcionEdu;
     }
 
-    public int getId_Pers_edu() {
-        return id_Pers_edu;
+    public int getIdPersedu() {
+        return idPersedu;
     }
 
-    public void setId_Pers_edu(int id_Persona) {
-        this.id_Pers_edu = id_Pers_edu;
+    public void setIdPersedu(int idPersedu) {
+        this.idPersedu = idPersedu;
     }
+
+    
     
     
     
