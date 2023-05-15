@@ -22,18 +22,18 @@ public class Proyecto {
     
     private String proy_url;
     
-    private int id_Pers_proy;
+    private int idPersproy;
 
 
 //Constructores 
 
     public Proyecto(){}
 
-    public Proyecto(String nombre, String descripcion, String proy_url, int id_Pers_proy) {
+    public Proyecto(String nombre, String descripcion, String proy_url, int idPersproy) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.proy_url = proy_url;
-        this.id_Pers_proy = id_Pers_proy;
+        this.idPersproy = idPersproy;
     }
         
   // Getters and Setters
@@ -70,16 +70,12 @@ public class Proyecto {
         this.proy_url = proy_url;
     }
 
-    public int getId_Pers_proy() {
-        return id_Pers_proy;
+    public int getIdPersproy() {
+        return idPersproy;
     }
 
-    public void setId_Pers_proy(int id_Pers_proy) {
-        this.id_Pers_proy = id_Pers_proy;
+    public void setIdPersproy(int idPersproy) {
+        this.idPersproy = idPersproy;
     }
-    
-    
-    
-        
         
 }

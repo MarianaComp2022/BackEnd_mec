@@ -39,7 +39,7 @@ public class CProyecto {
         if(sProyecto.existsByNombre(dtopry.getNombre()))
             return new ResponseEntity(new Mensaje("Ese proyecto existe"), HttpStatus.BAD_REQUEST);
         
-        Proyecto proyecto = new Proyecto(dtopry.getNombre(), dtopry.getDescripcion(), dtopry.getProy_url(), dtopry.getId_Pers_proy());
+        Proyecto proyecto = new Proyecto(dtopry.getNombre(), dtopry.getDescripcion(), dtopry.getProy_url(), dtopry.getIdPersproy());
         sProyecto.save(proyecto);
         
         return new ResponseEntity(new Mensaje("Proyecto Agregado"), HttpStatus.OK);
@@ -62,7 +62,7 @@ public class CProyecto {
         proyecto.setNombre(dtopry.getNombre());
         proyecto.setDescripcion(dtopry.getDescripcion());
         proyecto.setProy_url(dtopry.getProy_url());
-        proyecto.setId_Pers_proy(dtopry.getId_Pers_proy());
+        proyecto.setIdPersproy(dtopry.getIdPersproy());
         
         sProyecto.save(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto Actualizado"), HttpStatus.OK);
